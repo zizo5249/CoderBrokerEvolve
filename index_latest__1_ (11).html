@@ -1326,7 +1326,6 @@ body > *:not(#bg-canvas) { position:relative; z-index:1; }
   <div style="margin-left:auto;display:flex;align-items:center;gap:8px;flex-shrink:0;">
     <!-- Admin switcher: CRM views -->
     <div style="display:flex;align-items:center;gap:1px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:2px;height:30px;">
-      <button onclick="nav(this,'s-agent')" class="nav-link" title="Agent Dashboard" style="padding:3px 10px;font-size:11px;font-weight:600;color:var(--text-muted);border-radius:4px;height:24px;display:flex;align-items:center;">Agent</button>
       <button onclick="nav(this,'s-agency')" class="nav-link" title="Agency Dashboard" style="padding:3px 10px;font-size:11px;font-weight:600;color:var(--text-muted);border-radius:4px;height:24px;display:flex;align-items:center;">Agency</button>
       <button onclick="nav(this,'s-client')" class="nav-link" title="Client Profile" style="padding:3px 10px;font-size:11px;font-weight:600;color:var(--text-muted);border-radius:4px;height:24px;display:flex;align-items:center;">Client</button>
     </div>
@@ -4905,50 +4904,48 @@ function filterLifeConv(btn, filter) {
     <button class="lob-btn" id="lob-aca" onclick="switchLOB('aca')" style="background:none;color:var(--text-muted);"><span class="lob-indicator" style="background:var(--primary);"></span>ACA</button><button class="lob-btn" id="lob-medicare" onclick="switchLOB('medicare')" style="background:none;color:var(--text-muted);"><span class="lob-indicator" style="background:var(--secondary);"></span>Medicare</button><button class="lob-btn" id="lob-ancillary" onclick="switchLOB('ancillary')" style="background:none;color:var(--text-muted);"><span class="lob-indicator" style="background:var(--accent);"></span>Ancillary</button><button class="lob-btn" id="lob-life" onclick="switchLOB('life')" style="background:none;color:var(--text-muted);"><span class="lob-indicator" style="background:#FF9F43;"></span>Life</button>
   </div>
 
-  <!-- HERO: TITLE + B.E.A. COMMAND CARD -->
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px;align-items:start;">
+  <!-- HERO: TITLE + Bea COMMAND CARD -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:18px;align-items:start;">
     <!-- LEFT: Title -->
     <div style="padding-top:4px;">
       <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:6px;font-weight:600;">Marketing</div>
       <h1 style="font-size:26px;font-weight:700;letter-spacing:-0.5px;margin-bottom:10px;">Marketing <span style="color:var(--primary);">Launchpad</span></h1>
-      <p style="font-size:13px;color:var(--text-muted);line-height:1.5;max-width:300px;">Build, launch, and scale your business — powered by B.E.A.</p>
+      <p style="font-size:13px;color:var(--text-muted);line-height:1.5;max-width:300px;">Build, launch, and scale your business — powered by Bea</p>
     </div>
-    <!-- RIGHT: B.E.A. Command Card -->
+    <!-- RIGHT: Bea Command Card -->
     <div class="card" style="background:linear-gradient(135deg,rgba(0,194,255,0.08) 0%,rgba(123,94,167,0.08) 100%);border:1px solid rgba(0,194,255,0.25);padding:18px;">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
         <div style="width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,rgba(0,194,255,0.2),rgba(123,94,167,0.2));border:1px solid rgba(0,194,255,0.35);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">🤖</div>
         <div>
-          <div style="font-weight:700;font-size:14px;">B.E.A. <span style="color:var(--primary);">AI Marketing Assistant</span></div>
+          <div style="font-weight:700;font-size:14px;">Bea <span style="color:var(--primary);">AI Marketing Assistant</span></div>
           <div style="font-size:11px;color:var(--text-muted);">Your marketing brain — just ask</div>
         </div>
       </div>
       <!-- Input bar -->
-      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(0,194,255,0.2);border-radius:8px;padding:8px 12px;margin-bottom:12px;cursor:text;" onclick="toast('B.E.A. is listening…','info')">
-        <span style="font-size:12px;color:var(--text-muted);flex:1;">Ask B.E.A… "Build me a funnel for ACA leads"</span>
+      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(0,194,255,0.2);border-radius:8px;padding:8px 12px;margin-bottom:12px;cursor:text;" onclick="toast('Bea is listening…','info')">
+        <span style="font-size:12px;color:var(--text-muted);flex:1;">Ask Bea… "Build me a funnel for ACA leads"</span>
         <span style="color:var(--primary);font-size:14px;">↵</span>
       </div>
       <!-- Quick Actions -->
       <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;">
-        <button onclick="toast('B.E.A. is creating your funnel…','info')" style="background:rgba(0,194,255,0.1);border:1px solid rgba(0,194,255,0.2);color:var(--primary);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;">Create Funnel</button>
-        <button onclick="toast('B.E.A. is writing ad copy…','info')" style="background:rgba(123,94,167,0.1);border:1px solid rgba(123,94,167,0.25);color:#b08fd4;border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;">Write Ad Copy</button>
-        <button onclick="toast('B.E.A. is building your landing page…','info')" style="background:rgba(0,255,178,0.08);border:1px solid rgba(0,255,178,0.2);color:var(--accent);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;">Build Landing Page</button>
-        <button onclick="toast('B.E.A. is generating your email campaign…','info')" style="background:rgba(255,209,102,0.08);border:1px solid rgba(255,209,102,0.2);color:var(--yellow);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;">Generate Email Campaign</button>
-        <button onclick="toast('B.E.A. is creating SMS follow-up sequence…','info')" style="background:rgba(255,159,67,0.08);border:1px solid rgba(255,159,67,0.2);color:#FF9F43;border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;">Create SMS Follow-Up</button>
+        <button onclick="toast('Bea is creating your funnel…','info')" style="background:rgba(0,194,255,0.1);border:1px solid rgba(0,194,255,0.2);color:var(--primary);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;">Create Funnel</button>
+        <button onclick="toast('Bea is writing ad copy…','info')" style="background:rgba(123,94,167,0.1);border:1px solid rgba(123,94,167,0.25);color:#b08fd4;border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;">Write Ad Copy</button>
+        <button onclick="toast('Bea is building your landing page…','info')" style="background:rgba(0,255,178,0.08);border:1px solid rgba(0,255,178,0.2);color:var(--accent);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;">Build Landing Page</button>
       </div>
-      <button onclick="toast('Launching B.E.A. AI Marketing Assistant…','info')" style="width:100%;background:linear-gradient(135deg,var(--primary),rgba(123,94,167,0.9));border:none;color:#fff;border-radius:8px;padding:10px;font-size:13px;font-weight:700;cursor:pointer;letter-spacing:0.3px;">Launch B.E.A.</button>
+      <button onclick="toast('Launching Bea AI Marketing Assistant…','info')" style="width:100%;background:linear-gradient(135deg,var(--primary),rgba(123,94,167,0.9));border:none;color:#fff;border-radius:8px;padding:10px;font-size:13px;font-weight:700;cursor:pointer;letter-spacing:0.3px;">Launch Bea</button>
     </div>
   </div>
 
   <!-- QUICK LAUNCH TEMPLATES -->
   <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.7px;color:var(--text-muted);margin-bottom:10px;">Quick Launch Templates</div>
-  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:24px;">
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:16px;">
     <!-- ACA Lead Funnel -->
     <div class="card" style="padding:14px;display:flex;flex-direction:column;gap:8px;">
       <div style="font-size:18px;">🎯</div>
       <div style="font-weight:600;font-size:12px;line-height:1.3;">ACA Lead Funnel</div>
       <div style="margin-top:auto;display:flex;flex-direction:column;gap:5px;">
         <button onclick="toast('Deploying ACA Lead Funnel…','info')" style="background:var(--primary);border:none;color:#000;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:700;cursor:pointer;">Deploy</button>
-        <button onclick="toast('Opening with B.E.A…','info')" style="background:rgba(0,194,255,0.1);border:1px solid rgba(0,194,255,0.2);color:var(--primary);border-radius:6px;padding:5px 8px;font-size:11px;font-weight:600;cursor:pointer;">Customize with B.E.A.</button>
+        <button onclick="toast('Opening with Bea…','info')" style="background:rgba(0,194,255,0.1);border:1px solid rgba(0,194,255,0.2);color:var(--primary);border-radius:6px;padding:5px 8px;font-size:11px;font-weight:600;cursor:pointer;">Customize with Bea</button>
       </div>
     </div>
     <!-- Medicare Appointment Funnel -->
@@ -4957,7 +4954,7 @@ function filterLifeConv(btn, filter) {
       <div style="font-weight:600;font-size:12px;line-height:1.3;">Medicare Appointment Funnel</div>
       <div style="margin-top:auto;display:flex;flex-direction:column;gap:5px;">
         <button onclick="toast('Deploying Medicare Appointment Funnel…','info')" style="background:var(--secondary);border:none;color:#fff;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:700;cursor:pointer;">Deploy</button>
-        <button onclick="toast('Opening with B.E.A…','info')" style="background:rgba(123,94,167,0.1);border:1px solid rgba(123,94,167,0.25);color:#b08fd4;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:600;cursor:pointer;">Customize with B.E.A.</button>
+        <button onclick="toast('Opening with Bea…','info')" style="background:rgba(123,94,167,0.1);border:1px solid rgba(123,94,167,0.25);color:#b08fd4;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:600;cursor:pointer;">Customize with Bea</button>
       </div>
     </div>
     <!-- Life Insurance Funnel -->
@@ -4966,7 +4963,7 @@ function filterLifeConv(btn, filter) {
       <div style="font-weight:600;font-size:12px;line-height:1.3;">Life Insurance Funnel</div>
       <div style="margin-top:auto;display:flex;flex-direction:column;gap:5px;">
         <button onclick="toast('Deploying Life Insurance Funnel…','info')" style="background:#FF9F43;border:none;color:#000;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:700;cursor:pointer;">Deploy</button>
-        <button onclick="toast('Opening with B.E.A…','info')" style="background:rgba(255,159,67,0.1);border:1px solid rgba(255,159,67,0.2);color:#FF9F43;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:600;cursor:pointer;">Customize with B.E.A.</button>
+        <button onclick="toast('Opening with Bea…','info')" style="background:rgba(255,159,67,0.1);border:1px solid rgba(255,159,67,0.2);color:#FF9F43;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:600;cursor:pointer;">Customize with Bea</button>
       </div>
     </div>
     <!-- Referral Campaign -->
@@ -4975,7 +4972,7 @@ function filterLifeConv(btn, filter) {
       <div style="font-weight:600;font-size:12px;line-height:1.3;">Referral Campaign</div>
       <div style="margin-top:auto;display:flex;flex-direction:column;gap:5px;">
         <button onclick="toast('Deploying Referral Campaign…','info')" style="background:var(--accent);border:none;color:#000;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:700;cursor:pointer;">Deploy</button>
-        <button onclick="toast('Opening with B.E.A…','info')" style="background:rgba(0,255,178,0.08);border:1px solid rgba(0,255,178,0.2);color:var(--accent);border-radius:6px;padding:5px 8px;font-size:11px;font-weight:600;cursor:pointer;">Customize with B.E.A.</button>
+        <button onclick="toast('Opening with Bea…','info')" style="background:rgba(0,255,178,0.08);border:1px solid rgba(0,255,178,0.2);color:var(--accent);border-radius:6px;padding:5px 8px;font-size:11px;font-weight:600;cursor:pointer;">Customize with Bea</button>
       </div>
     </div>
     <!-- Reactivation Campaign -->
@@ -4984,87 +4981,87 @@ function filterLifeConv(btn, filter) {
       <div style="font-weight:600;font-size:12px;line-height:1.3;">Reactivation Campaign</div>
       <div style="margin-top:auto;display:flex;flex-direction:column;gap:5px;">
         <button onclick="toast('Deploying Reactivation Campaign…','info')" style="background:rgba(255,209,102,0.9);border:none;color:#000;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:700;cursor:pointer;">Deploy</button>
-        <button onclick="toast('Opening with B.E.A…','info')" style="background:rgba(255,209,102,0.08);border:1px solid rgba(255,209,102,0.2);color:var(--yellow);border-radius:6px;padding:5px 8px;font-size:11px;font-weight:600;cursor:pointer;">Customize with B.E.A.</button>
+        <button onclick="toast('Opening with Bea…','info')" style="background:rgba(255,209,102,0.08);border:1px solid rgba(255,209,102,0.2);color:var(--yellow);border-radius:6px;padding:5px 8px;font-size:11px;font-weight:600;cursor:pointer;">Customize with Bea</button>
       </div>
     </div>
   </div>
 
   <!-- SECTION 1: BUILD YOUR SYSTEM -->
   <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.7px;color:var(--primary);margin-bottom:8px;">Build Your System</div>
-  <div class="card" style="padding:0;overflow:hidden;margin-bottom:20px;border-color:rgba(0,194,255,0.15);">
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="toast('Opening Website Builder…','info')">
+  <div class="card" style="padding:0;overflow:hidden;margin-bottom:14px;border-color:rgba(0,194,255,0.15);">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="toast('Opening Website Builder…','info')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(0,194,255,0.1);border:1px solid rgba(0,194,255,0.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🌐</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Website Builder</div><div style="font-size:11px;color:var(--text-muted);">Build and publish your agent website <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Website Builder</div><div style="font-size:11px;color:var(--text-muted);">Build and publish your agent website <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="toast('Opening Funnel Builder…','info')">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="toast('Opening Funnel Builder…','info')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(123,94,167,0.12);border:1px solid rgba(123,94,167,0.25);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🔀</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Funnels</div><div style="font-size:11px;color:var(--text-muted);">Lead capture and enrollment funnels <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Funnels</div><div style="font-size:11px;color:var(--text-muted);">Lead capture and enrollment funnels <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="toast('Opening Form Builder…','info')">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="toast('Opening Form Builder…','info')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(0,255,178,0.08);border:1px solid rgba(0,255,178,0.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">📋</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Forms</div><div style="font-size:11px;color:var(--text-muted);">Intake forms, consent forms, surveys <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Forms</div><div style="font-size:11px;color:var(--text-muted);">Intake forms, consent forms, surveys <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="toast('Opening Survey Builder…','info')">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="toast('Opening Survey Builder…','info')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(255,209,102,0.1);border:1px solid rgba(255,209,102,0.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">📊</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Surveys</div><div style="font-size:11px;color:var(--text-muted);">Client satisfaction and needs assessment <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Surveys</div><div style="font-size:11px;color:var(--text-muted);">Client satisfaction and needs assessment <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="toast('Opening Calendar Settings…','info')">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="toast('Opening Calendar Settings…','info')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(0,194,255,0.1);border:1px solid rgba(0,194,255,0.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">📅</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Calendars</div><div style="font-size:11px;color:var(--text-muted);">Booking pages and appointment scheduling <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Calendars</div><div style="font-size:11px;color:var(--text-muted);">Booking pages and appointment scheduling <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;cursor:pointer;" onclick="toast('Opening Blog Builder…','info')">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;cursor:pointer;" onclick="toast('Opening Blog Builder…','info')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(255,159,67,0.1);border:1px solid rgba(255,159,67,0.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">✍️</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Blog / Content</div><div style="font-size:11px;color:var(--text-muted);">Publish SEO content and articles <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Blog / Content</div><div style="font-size:11px;color:var(--text-muted);">Publish SEO content and articles <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
   </div>
 
   <!-- SECTION 2: CREATE & PROMOTE -->
   <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.7px;color:#b08fd4;margin-bottom:8px;">Create &amp; Promote</div>
-  <div class="card" style="padding:0;overflow:hidden;margin-bottom:20px;border-color:rgba(123,94,167,0.2);">
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.open('https://canva.com','_blank')">
+  <div class="card" style="padding:0;overflow:hidden;margin-bottom:14px;border-color:rgba(123,94,167,0.2);">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.open('https://canva.com','_blank')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(0,194,168,0.1);border:1px solid rgba(0,194,168,0.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🎨</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Canva</div><div style="font-size:11px;color:var(--text-muted);">Design graphics, ads, and flyers <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Canva</div><div style="font-size:11px;color:var(--text-muted);">Design graphics, ads, and flyers <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.open('https://business.facebook.com','_blank')">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.open('https://business.facebook.com','_blank')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(24,119,242,0.1);border:1px solid rgba(24,119,242,0.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">📘</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Facebook Business</div><div style="font-size:11px;color:var(--text-muted);">Manage ad campaigns and audiences <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Facebook Business</div><div style="font-size:11px;color:var(--text-muted);">Manage ad campaigns and audiences <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.open('https://www.facebook.com/ads/library','_blank')">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.open('https://www.facebook.com/ads/library','_blank')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(24,119,242,0.08);border:1px solid rgba(24,119,242,0.15);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">📚</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">FB Ad Library</div><div style="font-size:11px;color:var(--text-muted);">Browse competitor insurance ads <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">FB Ad Library</div><div style="font-size:11px;color:var(--text-muted);">Browse competitor insurance ads <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;cursor:pointer;" onclick="toast('Opening Email Broadcast…','info')">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;cursor:pointer;" onclick="toast('Opening Email Broadcast…','info')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(0,194,255,0.08);border:1px solid rgba(0,194,255,0.15);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">📣</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Broadcasts</div><div style="font-size:11px;color:var(--text-muted);">Email and SMS mass outreach campaigns <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Broadcasts</div><div style="font-size:11px;color:var(--text-muted);">Email and SMS mass outreach campaigns <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
   </div>
 
   <!-- SECTION 3: COMMUNICATE & CLOSE -->
   <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.7px;color:#FFD166;margin-bottom:8px;">Communicate &amp; Close</div>
-  <div class="card" style="padding:0;overflow:hidden;margin-bottom:24px;border-color:rgba(255,209,102,0.15);">
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.open('https://zoom.us','_blank')">
+  <div class="card" style="padding:0;overflow:hidden;margin-bottom:14px;border-color:rgba(255,209,102,0.15);">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;" onclick="window.open('https://zoom.us','_blank')">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(45,140,255,0.1);border:1px solid rgba(45,140,255,0.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🎥</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Zoom</div><div style="font-size:11px;color:var(--text-muted);">Video calls and webinars with clients <span style="color:var(--primary);font-weight:600;">(B.E.A. assisted)</span></div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">Zoom</div><div style="font-size:11px;color:var(--text-muted);">Video calls and webinars with clients <span style="color:var(--primary);font-weight:600;">(Bea assisted)</span></div></div>
       <span style="color:var(--primary);font-size:14px;flex-shrink:0;">↗</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;opacity:0.5;">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;opacity:0.35;">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">💬</div>
       <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">SMS Campaigns</div><div style="font-size:11px;color:var(--text-muted);">AI-powered SMS follow-up sequences — coming soon</div></div>
       <span style="font-size:10px;background:rgba(255,255,255,0.08);border:1px solid var(--border);border-radius:4px;padding:2px 7px;color:var(--text-muted);flex-shrink:0;">Soon</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 16px;opacity:0.5;">
+    <div style="display:flex;align-items:center;gap:14px;padding:10px 14px;opacity:0.35;">
       <div style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🤖</div>
-      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">AI Follow-Ups</div><div style="font-size:11px;color:var(--text-muted);">Automated B.E.A. follow-up sequences — coming soon</div></div>
+      <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13px;">AI Follow-Ups</div><div style="font-size:11px;color:var(--text-muted);">Automated Bea follow-up sequences — coming soon</div></div>
       <span style="font-size:10px;background:rgba(255,255,255,0.08);border:1px solid var(--border);border-radius:4px;padding:2px 7px;color:var(--text-muted);flex-shrink:0;">Soon</span>
     </div>
   </div>
@@ -6119,15 +6116,6 @@ function filterLifeConv(btn, filter) {
     <div style="flex:1;font-size:12px;"><span style="font-weight:600;">Essential automations are locked on</span> — required for ACA compliance. Search by consent, renewal, complaint, or text.</div>
     <button class="bea-cta suggestion" onclick="toggleBeaPanel()">Ask Bea</button>
   </div>
-  <!-- BEA AUTOMATION BANNER -->
-  <div class="bea-auto-banner">
-    <div class="bea-avatar" style="width:24px;height:24px;font-size:10px;">B</div>
-    <div style="flex:1;font-size:12px;">
-      <span style="font-weight:600;">Essential automations are locked on</span>
-      <span style="color:var(--text-muted);"> · Required for ACA compliance. Search by consent, renewal, complaint, or text.</span>
-    </div>
-    <button class="bea-cta suggestion" onclick="toggleBeaPanel()">Ask Bea</button>
-  </div>
   <div id="auto-lob-aca">
     <!-- Essential -->
     <div class="auto-section essential">
@@ -6168,789 +6156,6 @@ function filterLifeConv(btn, filter) {
   <div id="auto-lob-medicare" style="display:none;"></div>
   <div id="auto-lob-ancillary" style="display:none;"></div>
 </div>
-<!-- ==================== AGENT DASHBOARD ==================== -->
-<div id="s-agent" class="screen">
-  <!-- LOB SWITCHER -->
-  <div style="display:flex;align-items:center;justify-content:center;gap:3px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:10px;padding:4px;margin-bottom:20px;width:fit-content;margin-left:auto;margin-right:auto;">
-    <button class="lob-btn" id="lob-aca" onclick="switchLOB('aca')" style="background:none;color:var(--text-muted);"><span class="lob-indicator" style="background:var(--primary);"></span>ACA</button><button class="lob-btn" id="lob-medicare" onclick="switchLOB('medicare')" style="background:none;color:var(--text-muted);"><span class="lob-indicator" style="background:var(--secondary);"></span>Medicare</button><button class="lob-btn" id="lob-ancillary" onclick="switchLOB('ancillary')" style="background:none;color:var(--text-muted);"><span class="lob-indicator" style="background:var(--accent);"></span>Ancillary</button><button class="lob-btn" id="lob-life" onclick="switchLOB('life')" style="background:none;color:var(--text-muted);"><span class="lob-indicator" style="background:#FF9F43;"></span>Life</button>
-  </div>
-
-  <div class="page-header">
-    <div>
-      <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:4px;font-weight:600;">Agent</div>
-      <h1>Marcus <span>Rivera</span></h1>
-      <p style="margin:4px 0 0;font-size:12px;color:var(--text-muted);">ACA + Medicare · NextLevel Benefits Group</p>
-    </div>
-    <div style="display:flex;gap:8px;">
-      <button class="btn btn-ghost btn-sm" onclick="openModal('modal-add-lead')">+ Add Lead</button>
-      <button class="btn btn-primary btn-sm" onclick="openModal('modal-book-appt')">+ Book Appointment</button>
-    </div>
-  </div>
-
-  <!-- STAT PILLS -->
-  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;">
-    <div class="stat-pill"><span class="stat-val" style="color:var(--primary)">24</span><span class="stat-lbl">Active Leads</span></div>
-    <div class="stat-pill"><span class="stat-val" style="color:var(--accent)">8</span><span class="stat-lbl">Apps This Week</span></div>
-    <div class="stat-pill"><span class="stat-val" style="color:var(--yellow)">3</span><span class="stat-lbl">Appts Today</span></div>
-    <div class="stat-pill"><span class="stat-val" style="color:var(--orange)">62%</span><span class="stat-lbl">Conversion Rate</span></div>
-  </div>
-
-  <!-- ══════════════════════════════════════════════════════════ -->
-  <!-- AGENT WEEKLY PRODUCTION GRID — SINGLE AGENT VERSION      -->
-  <!-- ══════════════════════════════════════════════════════════ -->
-  <div class="card" style="padding:0;overflow:hidden;margin-bottom:20px;">
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--border);">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="font-size:15px;font-weight:800;letter-spacing:-0.3px;">My Production · This Week</div>
-        <span style="font-size:10px;font-weight:700;padding:2px 8px;background:rgba(0,255,178,0.08);color:var(--accent);border-radius:20px;border:1px solid rgba(0,255,178,0.2);">● Live</span>
-      </div>
-      <div class="pb-chart-toggle">
-        <button class="pb-chart-btn active" onclick="switchAgentGrid('week',this)">Weekly</button>
-        <button class="pb-chart-btn" onclick="switchAgentGrid('daily',this)">Daily</button>
-        <button class="pb-chart-btn" onclick="switchAgentGrid('month',this)">Monthly</button>
-      </div>
-    </div>
-    <div style="overflow-x:auto;">
-      <table style="width:100%;border-collapse:collapse;min-width:600px;">
-        <thead>
-          <tr style="border-bottom:1.5px solid var(--border);">
-            <th style="text-align:left;padding:11px 20px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:var(--text-dim);width:120px;">Day</th>
-            <th style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:80px;">Mon</th>
-            <th style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:80px;">Tue</th>
-            <th style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:80px;">Wed</th>
-            <th style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:80px;">Thu</th>
-            <th style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:80px;">Fri</th>
-            <th style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:80px;">Sat</th>
-            <th style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--primary);min-width:80px;">Today</th>
-            <th style="text-align:center;padding:11px 16px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--accent);min-width:80px;border-left:1px solid var(--border);">Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Apps row -->
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
-            <td style="padding:16px 20px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);">Apps</td>
-            <td style="text-align:center;padding:16px 14px;background:rgba(0,255,178,0.06);">
-              <div style="font-size:28px;font-weight:800;color:var(--accent);line-height:1;">5</div>
-            </td>
-            <td style="text-align:center;padding:16px 14px;background:rgba(0,255,178,0.04);">
-              <div style="font-size:28px;font-weight:800;color:var(--accent);line-height:1;">3</div>
-            </td>
-            <td style="text-align:center;padding:16px 14px;background:rgba(0,255,178,0.06);">
-              <div style="font-size:28px;font-weight:800;color:var(--accent);line-height:1;">4</div>
-            </td>
-            <td style="text-align:center;padding:16px 14px;background:rgba(0,255,178,0.07);">
-              <div style="font-size:28px;font-weight:800;color:var(--accent);line-height:1;">6</div>
-            </td>
-            <td style="text-align:center;padding:16px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:28px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-            </td>
-            <td style="text-align:center;padding:16px 14px;">
-              <div style="font-size:28px;font-weight:800;color:var(--text-muted);line-height:1;">1</div>
-            </td>
-            <td style="text-align:center;padding:16px 14px;background:rgba(0,194,255,0.08);border-left:1px solid rgba(0,194,255,0.15);">
-              <div style="font-size:28px;font-weight:800;color:var(--primary);line-height:1;">5</div>
-            </td>
-            <td style="text-align:center;padding:16px 16px;border-left:1px solid var(--border);">
-              <div style="font-size:32px;font-weight:800;color:var(--accent);line-height:1;">26</div>
-            </td>
-          </tr>
-          <!-- Earned row -->
-          <tr style="border-bottom:none;">
-            <td style="padding:14px 20px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);">Est. Earned</td>
-            <td style="text-align:center;padding:14px 14px;background:rgba(0,255,178,0.04);">
-              <div style="font-size:16px;font-weight:700;color:var(--yellow);">$875</div>
-            </td>
-            <td style="text-align:center;padding:14px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:16px;font-weight:700;color:var(--yellow);">$525</div>
-            </td>
-            <td style="text-align:center;padding:14px 14px;background:rgba(0,255,178,0.04);">
-              <div style="font-size:16px;font-weight:700;color:var(--yellow);">$700</div>
-            </td>
-            <td style="text-align:center;padding:14px 14px;background:rgba(0,255,178,0.05);">
-              <div style="font-size:16px;font-weight:700;color:var(--yellow);">$1,050</div>
-            </td>
-            <td style="text-align:center;padding:14px 14px;background:rgba(0,255,178,0.02);">
-              <div style="font-size:16px;font-weight:700;color:var(--yellow);">$350</div>
-            </td>
-            <td style="text-align:center;padding:14px 14px;">
-              <div style="font-size:16px;font-weight:700;color:var(--text-muted);">$175</div>
-            </td>
-            <td style="text-align:center;padding:14px 14px;background:rgba(0,194,255,0.06);border-left:1px solid rgba(0,194,255,0.15);">
-              <div style="font-size:16px;font-weight:700;color:var(--primary);">$875</div>
-            </td>
-            <td style="text-align:center;padding:14px 16px;border-left:1px solid var(--border);">
-              <div style="font-size:22px;font-weight:800;color:var(--yellow);">$4,550</div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div style="padding:10px 20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
-      <span style="font-size:11px;color:var(--text-muted);">Week of Apr 7 – Apr 13 · 7 days tracked</span>
-      <span style="font-size:10px;color:var(--text-dim);font-style:italic;">Earnings estimated · Connect commission data for actuals</span>
-    </div>
-  </div>
-
-  <!-- ROW: LEADS + APPOINTMENTS -->
-  <div class="grid-2" style="margin-bottom:16px;">
-    <div class="card widget blue">
-      <div class="widget-header">
-        <span class="widget-title">New Leads</span>
-        <button class="btn btn-primary btn-sm" onclick="openModal('modal-add-lead')">+ Add</button>
-      </div>
-      <table class="data-table" id="leads-table">
-        <thead><tr><th>Name</th><th>Source</th><th>Added</th><th>Status</th><th></th></tr></thead>
-        <tbody id="leads-tbody"></tbody>
-      </table>
-    </div>
-    <div class="card widget yellow">
-      <div class="widget-header">
-        <span class="widget-title">Appointments Today</span>
-        <button class="btn btn-primary btn-sm" onclick="openModal('modal-book-appt')">+ Book</button>
-      </div>
-      <table class="data-table">
-        <thead><tr><th>Client</th><th>Type</th><th>Time</th><th>Status</th><th></th></tr></thead>
-        <tbody id="appts-tbody"></tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- ROW: CLIENT ALERTS + AOR -->
-  <div class="grid-2" style="margin-bottom:16px;">
-    <div class="card widget orange">
-      <div class="widget-header">
-        <span class="widget-title">Client Alerts</span>
-        <span>🔔</span>
-      </div>
-      <div id="client-alerts-banner" class="bea-task-banner critical" style="margin-bottom:12px;">
-        <div class="bea-avatar" style="width:24px;height:24px;font-size:10px;">B</div>
-        <div style="flex:1;"><span style="font-size:12px;font-weight:700;color:var(--red);">Loading…</span></div>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;" id="client-alerts-list">
-        <div class="alert-row"><div class="alert-dot dot-red"></div><div style="flex:1"><div style="font-weight:500;font-size:13px">Income verification pending</div><div style="font-size:11px;color:var(--text-muted)">Jennifer Castillo · ACA-4892 · <span style="color:var(--red);font-weight:600">Overdue 2 days</span></div></div><button class="btn btn-danger btn-sm" style="margin-left:8px" onclick="openClientAlertModal('Jennifer Castillo','Income Verification','Income documents required before application can be submitted to carrier.')">Fix</button></div>
-        <div class="alert-row"><div class="alert-dot dot-red"></div><div style="flex:1"><div style="font-weight:500;font-size:13px">Missing documents</div><div style="font-size:11px;color:var(--text-muted)">Tom Vickers · ACA-4901 · ID verification needed</div></div><button class="btn btn-danger btn-sm" style="margin-left:8px" onclick="openClientAlertModal('Tom Vickers','Missing Documents','Government-issued ID required before policy can be activated.')">Fix</button></div>
-        <div class="alert-row"><div class="alert-dot dot-yellow"></div><div style="flex:1"><div style="font-weight:500;font-size:13px">Consent required</div><div style="font-size:11px;color:var(--text-muted)">Grace Huang · Medicare consult · Signature pending</div></div><button class="btn btn-primary btn-sm" style="margin-left:8px" onclick="openClientAlertModal('Grace Huang','Consent Required','CMS consent form must be signed before Medicare consultation can proceed.')">Send</button></div>
-        <div class="alert-row"><div class="alert-dot dot-blue"></div><div style="flex:1"><div style="font-weight:500;font-size:13px">Application submitted</div><div style="font-size:11px;color:var(--text-muted)">Maria Santos · BCBS Silver · Carrier processing</div></div></div>
-      </div>
-    </div>
-    <div class="card widget red">
-      <div class="widget-header">
-        <span class="widget-title">AOR Protection Alerts</span>
-        <span class="badge badge-critical" id="aor-count-badge">1 Active</span>
-      </div>
-      <div id="aor-alerts-list">
-        <div class="alert-row"><div class="alert-dot dot-red"></div><div><div style="font-weight:500;font-size:13px;">AOR Change Detected</div><div style="font-size:11px;color:var(--text-muted)">Rosa Mendez · #ACA-4421</div></div><button class="btn btn-danger btn-sm" style="margin-left:auto;" onclick="resolveAOR(this)">Resolve</button></div>
-        <div class="alert-row"><div class="alert-dot dot-yellow"></div><div><div style="font-weight:500;font-size:13px;">AOR Verification Pending</div><div style="font-size:11px;color:var(--text-muted)">Jerome Walsh · #ACA-3301</div></div></div>
-        <div class="alert-row"><div class="alert-dot dot-blue"></div><div><div style="font-weight:500;font-size:13px;">AOR Confirmed</div><div style="font-size:11px;color:var(--text-muted)">Sandra Polk · #MED-8821</div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ROW: RENEWAL TIMELINE -->
-  <div class="card widget blue" style="margin-bottom:16px;">
-    <div class="widget-header"><span class="widget-title">Renewal Timeline</span><span>🔄</span></div>
-    <div id="renewal-list">
-      <div class="tl-item"><div class="tl-dot" style="background:var(--red)"></div><div class="tl-date">Mar 28</div><div><div style="font-weight:500;font-size:13px">Maria Santos</div><div style="font-size:11px;color:var(--red);font-weight:600">⚠ 17 days — urgent</div></div></div>
-      <div class="tl-item"><div class="tl-dot" style="background:var(--yellow)"></div><div class="tl-date">Apr 12</div><div><div style="font-weight:500;font-size:13px">Tom Vickers</div><div style="font-size:11px;color:var(--text-muted)">Ambetter Bronze</div></div></div>
-      <div class="tl-item"><div class="tl-dot" style="background:var(--accent)"></div><div class="tl-date">Apr 30</div><div><div style="font-weight:500;font-size:13px">Grace Huang</div><div style="font-size:11px;color:var(--text-muted)">Molina Gold</div></div></div>
-      <div class="tl-item"><div class="tl-dot" style="background:var(--text-dim)"></div><div class="tl-date">May 15</div><div><div style="font-weight:500;font-size:13px">Phil Dunmore</div><div style="font-size:11px;color:var(--text-muted)">Oscar Silver</div></div></div>
-    </div>
-  </div>
-
-</div>
-    
-  <div class="page-header">
-    <div>
-      <h1>Agent <span>Dashboard</span></h1>
-      <p>Marcus Rivera · ACA + Medicare</p>
-    </div>
-    <div style="display:flex;gap:8px;">
-      <button class="btn btn-ghost btn-sm" onclick="openModal('modal-add-lead')">+ Add Lead</button>
-      <button class="btn btn-primary btn-sm" onclick="openModal('modal-book-appt')">+ Book Appointment</button>
-    </div>
-  </div>
-  <!-- Stat Row -->
-  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;">
-    <div class="stat-pill"><span class="stat-val" style="color:var(--primary)" id="agent-lead-count">24</span><span class="stat-lbl">Active Leads</span></div>
-    <div class="stat-pill"><span class="stat-val" style="color:var(--accent)" id="agent-submitted">8</span><span class="stat-lbl">Policies Submitted</span></div>
-    <div class="stat-pill"><span class="stat-val" style="color:var(--yellow)" id="agent-appt-count">3</span><span class="stat-lbl">Appts Today</span></div>
-    <div class="stat-pill"><span class="stat-val" style="color:var(--orange)">62%</span><span class="stat-lbl">Conversion Rate</span></div>
-  </div>
-  <!-- Row 1: Leads + Appointments -->
-  <div class="grid-2" style="margin-bottom:16px;">
-    <div class="card widget blue">
-      <div class="widget-header">
-        <span class="widget-title">New Leads</span>
-        <button class="btn btn-primary btn-sm" onclick="openModal('modal-add-lead')">+ Add</button>
-      </div>
-      <table class="data-table" id="leads-table">
-        <thead><tr><th>Name</th><th>Source</th><th>Added</th><th>Status</th><th></th></tr></thead>
-        <tbody id="leads-tbody"></tbody>
-      </table>
-    </div>
-    <div class="card widget yellow">
-      <div class="widget-header">
-        <span class="widget-title">Appointments Today</span>
-        <button class="btn btn-primary btn-sm" onclick="openModal('modal-book-appt')">+ Book</button>
-      </div>
-      <table class="data-table">
-        <thead><tr><th>Client</th><th>Type</th><th>Time</th><th>Status</th><th></th></tr></thead>
-        <tbody id="appts-tbody"></tbody>
-      </table>
-    </div>
-  </div>
-<script>
-window.switchAgentGrid = function(period, btn) {
-  document.querySelectorAll('.pb-chart-btn').forEach(function(b){ b.classList.remove('active'); });
-  if (btn) btn.classList.add('active');
-  toast('Showing ' + period + ' production data', 'info');
-};
-</script>
-
-<style>
-/* ===== PRODUCTION BOARD STYLES ===== */
-.pb-kpi-bar { display:grid; grid-template-columns:repeat(6,1fr); gap:10px; margin-bottom:16px; }
-@media(max-width:960px){ .pb-kpi-bar { grid-template-columns:repeat(3,1fr); } }
-@media(max-width:600px){ .pb-kpi-bar { grid-template-columns:repeat(2,1fr); } }
-.pb-kpi { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:14px 16px; display:flex; flex-direction:column; gap:2px; position:relative; overflow:hidden; cursor:pointer; transition:border-color 0.15s, box-shadow 0.15s; }
-.pb-kpi:hover { border-color:var(--border2); box-shadow:0 4px 20px rgba(0,0,0,0.3); }
-.pb-kpi-accent { position:absolute; top:0; left:0; right:0; height:2px; }
-.pb-kpi-val { font-size:26px; font-weight:700; letter-spacing:-0.5px; line-height:1.1; }
-.pb-kpi-label { font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.6px; font-weight:600; margin-top:4px; }
-.pb-kpi-sub { font-size:11px; color:var(--text-dim); margin-top:2px; }
-.pb-kpi-delta { font-size:11px; font-weight:600; margin-top:4px; }
-.pb-kpi-delta.up { color:var(--accent); }
-.pb-kpi-delta.down { color:var(--red); }
-/* SCOREBOARD TABLE */
-.pb-table { width:100%; border-collapse:collapse; font-size:12px; }
-.pb-table thead th { padding:9px 12px; text-align:left; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; color:var(--text-dim); border-bottom:1px solid var(--border); cursor:pointer; user-select:none; white-space:nowrap; }
-.pb-table thead th:hover { color:var(--text-muted); }
-.pb-table thead th.sort-asc::after { content:" ↑"; color:var(--primary); }
-.pb-table thead th.sort-desc::after { content:" ↓"; color:var(--primary); }
-.pb-table tbody tr { border-bottom:1px solid rgba(255,255,255,0.03); transition:background 0.1s; }
-.pb-table tbody tr:hover { background:rgba(255,255,255,0.03); }
-.pb-table tbody td { padding:11px 12px; vertical-align:middle; }
-.pb-table tbody tr:last-child { border-bottom:none; }
-.pb-table tbody tr.top-performer { background:rgba(0,255,178,0.03); border-left:2px solid var(--accent); }
-.pb-table tbody tr.top-performer:hover { background:rgba(0,255,178,0.05); }
-.pb-agent-cell { display:flex; align-items:center; gap:9px; }
-.pb-agent-av { width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:10px; flex-shrink:0; }
-.pb-rank { font-size:13px; width:22px; text-align:center; }
-/* PRODUCTION FEED */
-.pb-feed-entry { padding:14px 16px; border-bottom:1px solid rgba(255,255,255,0.04); display:flex; gap:12px; align-items:flex-start; }
-.pb-feed-entry:last-child { border-bottom:none; }
-.pb-feed-av { width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:11px; flex-shrink:0; }
-.pb-feed-body { flex:1; min-width:0; }
-.pb-feed-name { font-size:13px; font-weight:700; }
-.pb-feed-apps { font-size:12px; color:var(--text-muted); margin-top:2px; }
-.pb-feed-clients { font-size:11px; color:var(--text-dim); margin-top:3px; font-style:italic; }
-.pb-feed-right { text-align:right; flex-shrink:0; }
-.pb-feed-earned { font-size:14px; font-weight:700; color:var(--accent); }
-.pb-feed-time { font-size:10px; color:var(--text-dim); margin-top:3px; }
-/* TOP EARNER CARDS */
-.pb-earner-row { display:flex; align-items:center; gap:10px; padding:9px 0; border-bottom:1px solid rgba(255,255,255,0.04); }
-.pb-earner-row:last-child { border-bottom:none; }
-.pb-earner-rank { font-size:15px; width:22px; flex-shrink:0; }
-.pb-earner-name { flex:1; font-size:13px; font-weight:600; }
-.pb-earner-amount { font-size:14px; font-weight:700; }
-/* CHART TOGGLE */
-.pb-chart-toggle { display:flex; gap:3px; background:var(--surface2); border:1px solid var(--border); border-radius:6px; padding:3px; }
-.pb-chart-btn { padding:5px 14px; border-radius:4px; font-size:11px; font-weight:700; cursor:pointer; border:none; background:none; color:var(--text-muted); font-family:var(--font); transition:all 0.15s; }
-.pb-chart-btn.active { background:var(--surface3); color:var(--text); }
-/* EARNINGS TOGGLE */
-.pb-earn-toggle { display:flex; align-items:center; gap:8px; background:var(--surface2); border:1px solid var(--border); border-radius:6px; padding:6px 12px; cursor:pointer; }
-.pb-earn-toggle-dot { width:28px; height:16px; border-radius:8px; background:var(--accent); position:relative; transition:background 0.2s; }
-.pb-earn-toggle-dot.off { background:rgba(255,255,255,0.15); }
-.pb-earn-toggle-dot::after { content:''; position:absolute; top:2px; right:2px; width:12px; height:12px; border-radius:50%; background:#fff; transition:right 0.2s; }
-.pb-earn-toggle-dot.off::after { right:auto; left:2px; }
-/* ESTIMATED LABEL */
-.pb-est-label { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; padding:1px 5px; border-radius:3px; background:rgba(255,209,102,0.1); color:var(--yellow); border:1px solid rgba(255,209,102,0.2); margin-left:4px; vertical-align:middle; }
-</style>
-<div id="s-agency" class="screen">
-
-  <!-- PAGE HEADER -->
-  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px;">
-    <div>
-      <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:4px;font-weight:600;">Agency</div>
-      <h1 style="margin:0;">Production <span>Board</span></h1>
-      <p style="margin:4px 0 0;font-size:12px;color:var(--text-muted);">NextLevel Benefits Group · Live Production Tracker</p>
-    </div>
-    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-      <div class="pb-earn-toggle" onclick="toggleEarnings()" title="Toggle earnings visibility">
-        <div class="pb-earn-toggle-dot" id="earn-toggle-dot"></div>
-        <span style="font-size:11px;font-weight:600;color:var(--text-muted);" id="earn-toggle-label">Show Earnings</span>
-      </div>
-      <!-- PERIOD TOGGLE -->
-      <div class="pb-chart-toggle">
-        <button class="pb-chart-btn active" onclick="switchGridPeriod('week',this)">Weekly</button>
-        <button class="pb-chart-btn" onclick="switchGridPeriod('daily',this)">Daily</button>
-        <button class="pb-chart-btn" onclick="switchGridPeriod('month',this)">Monthly</button>
-      </div>
-      <button class="btn btn-primary" onclick="openModal('modal-add-agent')">+ Add Agent</button>
-    </div>
-  </div>
-
-  <!-- KPI STRIP -->
-  <div class="pb-kpi-bar" style="margin-bottom:20px;">
-    <div class="pb-kpi">
-      <div class="pb-kpi-accent" style="background:var(--primary);"></div>
-      <div class="pb-kpi-val" style="color:var(--primary);">94</div>
-      <div class="pb-kpi-label">Calls Today</div>
-      <div class="pb-kpi-delta up">↑ 12 vs yesterday</div>
-    </div>
-    <div class="pb-kpi">
-      <div class="pb-kpi-accent" style="background:var(--accent);"></div>
-      <div class="pb-kpi-val" style="color:var(--accent);">8</div>
-      <div class="pb-kpi-label">Apps Today</div>
-      <div class="pb-kpi-delta up">↑ 3 vs yesterday</div>
-    </div>
-    <div class="pb-kpi">
-      <div class="pb-kpi-accent" style="background:rgba(0,255,178,0.5);"></div>
-      <div class="pb-kpi-val" style="color:rgba(0,255,178,0.75);">62</div>
-      <div class="pb-kpi-label">Apps This Week</div>
-      <div class="pb-kpi-delta up">↑ 18% vs last week</div>
-    </div>
-    <div class="pb-kpi">
-      <div class="pb-kpi-accent" style="background:var(--yellow);"></div>
-      <div class="pb-kpi-val earn-visible" style="color:var(--yellow);">$1,925</div>
-      <div class="pb-kpi-val earn-hidden" style="display:none;color:var(--yellow);">••••</div>
-      <div class="pb-kpi-label">Est. Earned Today</div>
-      <div class="pb-kpi-delta up">↑ All agents</div>
-    </div>
-    <div class="pb-kpi">
-      <div class="pb-kpi-accent" style="background:var(--orange);"></div>
-      <div class="pb-kpi-val" style="color:var(--orange);">57%</div>
-      <div class="pb-kpi-label">Conversion %</div>
-      <div class="pb-kpi-delta down">↓ Goal: 70%</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════════════════════════════ -->
-  <!-- AGENCY WEEKLY PRODUCTION GRID — THE MAIN BOARD           -->
-  <!-- ══════════════════════════════════════════════════════════ -->
-  <div class="card" style="padding:0;overflow:hidden;margin-bottom:16px;">
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--border);">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="font-size:15px;font-weight:800;letter-spacing:-0.3px;">Agency Production Grid</div>
-        <span style="font-size:10px;font-weight:700;padding:2px 8px;background:rgba(0,255,178,0.08);color:var(--accent);border-radius:20px;border:1px solid rgba(0,255,178,0.2);">● Live</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="display:flex;align-items:center;gap:12px;font-size:11px;color:var(--text-dim);">
-          <span style="display:inline-block;width:10px;height:10px;background:rgba(0,255,178,0.25);border:1px solid rgba(0,255,178,0.4);border-radius:2px;"></span>Strong
-          <span style="display:inline-block;width:10px;height:10px;background:rgba(255,77,106,0.15);border:1px solid rgba(255,77,106,0.3);border-radius:2px;margin-left:4px;"></span>Zero
-        </div>
-        <span style="font-size:11px;color:var(--text-dim);">Apps / Est. $</span>
-      </div>
-    </div>
-    <div style="overflow-x:auto;">
-      <table id="prod-grid" style="width:100%;border-collapse:collapse;min-width:700px;">
-        <thead>
-          <tr style="border-bottom:1.5px solid var(--border);">
-            <th style="text-align:left;padding:11px 20px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:var(--text-dim);width:160px;">Agent</th>
-            <th id="gh-mon" style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:72px;">Mon</th>
-            <th id="gh-tue" style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:72px;">Tue</th>
-            <th id="gh-wed" style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:72px;">Wed</th>
-            <th id="gh-thu" style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:72px;">Thu</th>
-            <th id="gh-fri" style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:72px;">Fri</th>
-            <th id="gh-sat" style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);min-width:72px;">Sat</th>
-            <th id="gh-sun" style="text-align:center;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--primary);min-width:72px;">Today</th>
-            <th style="text-align:center;padding:11px 16px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--accent);min-width:80px;border-left:1px solid var(--border);">Total Apps</th>
-            <th class="earn-col" style="text-align:center;padding:11px 16px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--yellow);min-width:90px;">Total $</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Marcus Rivera — top performer -->
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);border-left:3px solid var(--accent);">
-            <td style="padding:13px 20px;">
-              <div style="display:flex;align-items:center;gap:9px;">
-                <div style="width:30px;height:30px;border-radius:50%;background:rgba(0,194,255,0.12);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:10px;color:var(--primary);flex-shrink:0;">MR</div>
-                <div style="font-weight:700;font-size:13px;">Marcus Rivera</div>
-              </div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.06);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">5</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$875</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.04);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">3</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$525</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.06);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">4</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$700</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">6</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$1,050</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.04);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">1</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$175</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,194,255,0.07);border-left:1px solid rgba(0,194,255,0.15);">
-              <div style="font-size:18px;font-weight:800;color:var(--primary);line-height:1;">5</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$875</div>
-            </td>
-            <td style="text-align:center;padding:13px 16px;border-left:1px solid var(--border);">
-              <div style="font-size:22px;font-weight:800;color:var(--accent);line-height:1;">26</div>
-            </td>
-            <td class="earn-col" style="text-align:center;padding:13px 16px;">
-              <div style="font-size:18px;font-weight:700;color:var(--yellow);line-height:1;">$4,550</div>
-            </td>
-          </tr>
-          <!-- Jasmine Scott -->
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);border-left:3px solid var(--accent);">
-            <td style="padding:13px 20px;">
-              <div style="display:flex;align-items:center;gap:9px;">
-                <div style="width:30px;height:30px;border-radius:50%;background:rgba(123,94,167,0.15);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:10px;color:#a98fd4;flex-shrink:0;">JS</div>
-                <div style="font-weight:700;font-size:13px;">Jasmine Scott</div>
-              </div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.04);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">3</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$525</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.04);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">3</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$525</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">4</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$700</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,194,255,0.07);border-left:1px solid rgba(0,194,255,0.15);">
-              <div style="font-size:18px;font-weight:800;color:var(--primary);line-height:1;">3</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$525</div>
-            </td>
-            <td style="text-align:center;padding:13px 16px;border-left:1px solid var(--border);">
-              <div style="font-size:22px;font-weight:800;color:var(--accent);line-height:1;">17</div>
-            </td>
-            <td class="earn-col" style="text-align:center;padding:13px 16px;">
-              <div style="font-size:18px;font-weight:700;color:var(--yellow);line-height:1;">$2,975</div>
-            </td>
-          </tr>
-          <!-- David Kim -->
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
-            <td style="padding:13px 20px;">
-              <div style="display:flex;align-items:center;gap:9px;">
-                <div style="width:30px;height:30px;border-radius:50%;background:rgba(0,255,178,0.1);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:10px;color:var(--accent);flex-shrink:0;">DK</div>
-                <div style="font-weight:700;font-size:13px;">David Kim</div>
-              </div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.04);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">3</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$525</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">1</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$175</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">1</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$175</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,194,255,0.07);border-left:1px solid rgba(0,194,255,0.15);">
-              <div style="font-size:18px;font-weight:800;color:var(--primary);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 16px;border-left:1px solid var(--border);">
-              <div style="font-size:22px;font-weight:800;color:var(--accent);line-height:1;">11</div>
-            </td>
-            <td class="earn-col" style="text-align:center;padding:13px 16px;">
-              <div style="font-size:18px;font-weight:700;color:var(--yellow);line-height:1;">$1,925</div>
-            </td>
-          </tr>
-          <!-- Lisa Torres -->
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
-            <td style="padding:13px 20px;">
-              <div style="display:flex;align-items:center;gap:9px;">
-                <div style="width:30px;height:30px;border-radius:50%;background:rgba(255,159,67,0.12);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:10px;color:var(--orange);flex-shrink:0;">LT</div>
-                <div style="font-weight:700;font-size:13px;">Lisa Torres</div>
-              </div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">1</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$175</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">1</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$175</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,194,255,0.07);border-left:1px solid rgba(0,194,255,0.15);">
-              <div style="font-size:18px;font-weight:800;color:var(--primary);line-height:1;">1</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$175</div>
-            </td>
-            <td style="text-align:center;padding:13px 16px;border-left:1px solid var(--border);">
-              <div style="font-size:22px;font-weight:800;color:var(--accent);line-height:1;">7</div>
-            </td>
-            <td class="earn-col" style="text-align:center;padding:13px 16px;">
-              <div style="font-size:18px;font-weight:700;color:var(--yellow);line-height:1;">$1,225</div>
-            </td>
-          </tr>
-          <!-- Anthony Pierce -->
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
-            <td style="padding:13px 20px;">
-              <div style="display:flex;align-items:center;gap:9px;">
-                <div style="width:30px;height:30px;border-radius:50%;background:rgba(255,209,102,0.1);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:10px;color:var(--yellow);flex-shrink:0;">AP</div>
-                <div style="font-weight:700;font-size:13px;">Anthony Pierce</div>
-              </div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">1</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$175</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,194,255,0.07);border-left:1px solid rgba(0,194,255,0.15);">
-              <div style="font-size:18px;font-weight:800;color:var(--primary);line-height:1;">1</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$175</div>
-            </td>
-            <td style="text-align:center;padding:13px 16px;border-left:1px solid var(--border);">
-              <div style="font-size:22px;font-weight:800;color:var(--accent);line-height:1;">6</div>
-            </td>
-            <td class="earn-col" style="text-align:center;padding:13px 16px;">
-              <div style="font-size:18px;font-weight:700;color:var(--yellow);line-height:1;">$1,050</div>
-            </td>
-          </tr>
-          <!-- Nicole Warren — zero activity -->
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);background:rgba(255,77,106,0.02);">
-            <td style="padding:13px 20px;">
-              <div style="display:flex;align-items:center;gap:9px;">
-                <div style="width:30px;height:30px;border-radius:50%;background:rgba(255,77,106,0.1);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:10px;color:var(--red);flex-shrink:0;">NW</div>
-                <div><div style="font-weight:700;font-size:13px;">Nicole Warren</div><div style="font-size:10px;color:var(--yellow);margin-top:1px;">Needs coaching</div></div>
-              </div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">1</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$175</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(255,77,106,0.08);border-left:1px solid rgba(255,77,106,0.15);">
-              <div style="font-size:18px;font-weight:800;color:var(--red);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 16px;border-left:1px solid var(--border);">
-              <div style="font-size:22px;font-weight:800;color:var(--text-muted);line-height:1;">3</div>
-            </td>
-            <td class="earn-col" style="text-align:center;padding:13px 16px;">
-              <div style="font-size:18px;font-weight:700;color:var(--text-muted);line-height:1;">$525</div>
-            </td>
-          </tr>
-          <!-- Tom Vickers — no activity -->
-          <tr style="border-bottom:none;background:rgba(255,77,106,0.02);">
-            <td style="padding:13px 20px;">
-              <div style="display:flex;align-items:center;gap:9px;">
-                <div style="width:30px;height:30px;border-radius:50%;background:rgba(255,77,106,0.1);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:10px;color:var(--red);flex-shrink:0;">TV</div>
-                <div><div style="font-weight:700;font-size:13px;">Tom Vickers</div><div style="font-size:10px;color:var(--red);margin-top:1px;">⚠ No activity today</div></div>
-              </div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">1</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$175</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(0,255,178,0.03);">
-              <div style="font-size:18px;font-weight:800;color:var(--accent);line-height:1;">2</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$350</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;">
-              <div style="font-size:18px;font-weight:800;color:var(--text-muted);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 14px;background:rgba(255,77,106,0.08);border-left:1px solid rgba(255,77,106,0.15);">
-              <div style="font-size:18px;font-weight:800;color:var(--red);line-height:1;">0</div>
-              <div class="earn-col" style="font-size:10px;color:var(--text-dim);margin-top:2px;">$0</div>
-            </td>
-            <td style="text-align:center;padding:13px 16px;border-left:1px solid var(--border);">
-              <div style="font-size:22px;font-weight:800;color:var(--text-muted);line-height:1;">3</div>
-            </td>
-            <td class="earn-col" style="text-align:center;padding:13px 16px;">
-              <div style="font-size:18px;font-weight:700;color:var(--text-muted);line-height:1;">$525</div>
-            </td>
-          </tr>
-        </tbody>
-        <!-- TOTALS ROW -->
-        <tfoot>
-          <tr style="border-top:1.5px solid var(--border);background:rgba(255,255,255,0.02);">
-            <td style="padding:13px 20px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);">Team Totals</td>
-            <td style="text-align:center;padding:13px 14px;"><div style="font-size:16px;font-weight:800;color:var(--text-muted);">13</div></td>
-            <td style="text-align:center;padding:13px 14px;"><div style="font-size:16px;font-weight:800;color:var(--text-muted);">12</div></td>
-            <td style="text-align:center;padding:13px 14px;"><div style="font-size:16px;font-weight:800;color:var(--text-muted);">12</div></td>
-            <td style="text-align:center;padding:13px 14px;"><div style="font-size:16px;font-weight:800;color:var(--text-muted);">16</div></td>
-            <td style="text-align:center;padding:13px 14px;"><div style="font-size:16px;font-weight:800;color:var(--text-muted);">5</div></td>
-            <td style="text-align:center;padding:13px 14px;"><div style="font-size:16px;font-weight:800;color:var(--text-muted);">3</div></td>
-            <td style="text-align:center;padding:13px 14px;border-left:1px solid rgba(0,194,255,0.15);"><div style="font-size:16px;font-weight:800;color:var(--primary);">12</div></td>
-            <td style="text-align:center;padding:13px 16px;border-left:1px solid var(--border);"><div style="font-size:22px;font-weight:800;color:var(--accent);">61</div></td>
-            <td class="earn-col" style="text-align:center;padding:13px 16px;"><div style="font-size:18px;font-weight:700;color:var(--yellow);">$11,775</div></td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-    <div style="padding:10px 20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
-      <span style="font-size:11px;color:var(--text-muted);">7 agents tracked · This week</span>
-      <span style="font-size:10px;color:var(--text-dim);font-style:italic;">Earnings are estimated based on submitted apps · Connect commission data for actuals</span>
-    </div>
-  </div>
-
-  <!-- SECONDARY: APPOINTMENTS TODAY + ALERTS -->
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
-    <!-- APPOINTMENTS -->
-    <div class="card" style="padding:0;overflow:hidden;">
-      <div style="padding:12px 16px;border-bottom:1px solid var(--border);font-size:13px;font-weight:700;">📞 Appointments Today</div>
-      <div style="padding:10px 16px;">
-        <div class="pb-earner-row">
-          <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0;box-shadow:0 0 5px rgba(0,255,178,0.4);"></div>
-          <span class="pb-earner-name" style="font-size:12px;">Marcus Rivera <span style="color:var(--text-dim);font-weight:400;">· Maria Santos</span></span>
-          <span style="font-size:11px;color:var(--text-muted);">10:00 AM</span>
-        </div>
-        <div class="pb-earner-row">
-          <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0;box-shadow:0 0 5px rgba(0,255,178,0.4);"></div>
-          <span class="pb-earner-name" style="font-size:12px;">Jasmine Scott <span style="color:var(--text-dim);font-weight:400;">· Rosa Mendez</span></span>
-          <span style="font-size:11px;color:var(--text-muted);">11:30 AM</span>
-        </div>
-        <div class="pb-earner-row">
-          <div style="width:8px;height:8px;border-radius:50%;background:var(--yellow);flex-shrink:0;"></div>
-          <span class="pb-earner-name" style="font-size:12px;">David Kim <span style="color:var(--text-dim);font-weight:400;">· Phil Dunmore</span></span>
-          <span style="font-size:11px;color:var(--primary);">1:00 PM</span>
-        </div>
-        <div class="pb-earner-row">
-          <div style="width:8px;height:8px;border-radius:50%;background:var(--yellow);flex-shrink:0;"></div>
-          <span class="pb-earner-name" style="font-size:12px;">Lisa Torres <span style="color:var(--text-dim);font-weight:400;">· Grace Huang</span></span>
-          <span style="font-size:11px;color:var(--primary);">2:30 PM</span>
-        </div>
-        <div class="pb-earner-row">
-          <div style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.2);flex-shrink:0;"></div>
-          <span class="pb-earner-name" style="font-size:12px;color:var(--text-muted);">3 more appointments pending</span>
-          <button class="btn btn-ghost btn-sm" onclick="toast('Opening appointments view…','info')" style="font-size:10px;">View All</button>
-        </div>
-      </div>
-    </div>
-    <!-- AGENT ALERTS -->
-    <div class="card" style="padding:0;overflow:hidden;">
-      <div style="padding:12px 16px;border-bottom:1px solid var(--border);font-size:13px;font-weight:700;">⚠️ Agent Alerts</div>
-      <div style="padding:10px 16px;">
-        <div class="pb-earner-row" style="border-bottom:1px solid rgba(255,255,255,0.04);">
-          <div style="width:8px;height:8px;border-radius:50%;background:var(--red);flex-shrink:0;box-shadow:0 0 5px rgba(255,77,106,0.4);"></div>
-          <div style="flex:1;font-size:12px;"><span style="font-weight:600;">Tom Vickers</span> — No activity today</div>
-          <button class="btn btn-ghost btn-sm" onclick="toast('Opening Tom Vickers profile…','info')" style="font-size:10px;">View</button>
-        </div>
-        <div class="pb-earner-row" style="border-bottom:1px solid rgba(255,255,255,0.04);">
-          <div style="width:8px;height:8px;border-radius:50%;background:var(--yellow);flex-shrink:0;"></div>
-          <div style="flex:1;font-size:12px;"><span style="font-weight:600;">Nicole Warren</span> — Below target conversion</div>
-          <button class="btn btn-ghost btn-sm" onclick="toast('Opening coaching queue…','info')" style="font-size:10px;">Coach</button>
-        </div>
-        <div class="pb-earner-row">
-          <div style="width:8px;height:8px;border-radius:50%;background:var(--primary);flex-shrink:0;"></div>
-          <div style="flex:1;font-size:12px;"><span style="font-weight:600;">Anthony Pierce</span> — 0 apps Monday</div>
-          <button class="btn btn-ghost btn-sm" onclick="toast('Sending check-in to Anthony…','info')" style="font-size:10px;">Check In</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<script>
-window.switchGridPeriod = function(period, btn) {
-  document.querySelectorAll('.pb-chart-btn').forEach(function(b){ b.classList.remove('active'); });
-  if (btn) btn.classList.add('active');
-  toast('Showing ' + period + ' production data', 'info');
-};
-</script>
-
-
 <!-- ==================== CARRIER HUB ==================== -->
 <div id="s-carrier" class="screen">
   <!-- LOB SWITCHER -->
